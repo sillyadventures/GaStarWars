@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" type= "text/css" href="./assets/css/stylesheet.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Star Wars</title>
+  </head>
+  <body>
+    <nav class="blue-grey darken-4">
+   <div class="nav-wrapper">
+     <a href="#" class="brand-logo center">Star Wars</a>
+     <ul id="nav-mobile" class="left hide-on-med-and-down">
+       <li><a href="sass.html">Char 1</a></li>
+       <li><a href="badges.html">Char 2</a></li>
+       <li><a href="collapsible.html">Char 3</a></li>
+     </ul>
+   </div>
+ </nav>
+  <div class="container">
+
+  <h1>Star Wars</h1>
+  <div id="appInfo">
+      <ul>
+        <li>
+            {{ infos.name }}
+        </li>
+      </ul>
+  </div>
+  <div id="appSpecies">
+    <ul>
+      <li v-for="specie in species">
+        {{ specie.text }}
+      </li>
+    </ul>
+  </div>
+
+
+
+
+
+  </div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="./assets/javascript/vue.js" charset="utf-8"></script>
+  </body>
+</html>
