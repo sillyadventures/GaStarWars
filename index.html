@@ -19,27 +19,20 @@
      </ul>
    </div>
  </nav>
-   <!-- <img src="/assets/images/swcharacters/luke2.jpg"> -->
-  <!-- <div class="container">
-  <div id="appInfo">
-    <h1>{{ infos }}</h1>
-      <ul>
-        <li>
-          randomChar : {{ randomChar }}
-        </li>
-        <li>
-          characters : {{ characters }}
-        </li>
-        <li>
-          StarShips : {{ infos }}
-        </li>
-      </ul>
-  </div> -->
+
+  <div class="container">
     <div id="current">
       <h1>{{ current.name }}</h1>
       <ul>
+
+        <div v-for="todo in images">
+          <div v-if="random === todo.text">
+            <img v-bind:src='todo.image'/>
+          </div>
+        </div>
+        
         <li>
-          Gender : {{ current.gender}}
+          Gender : {{ current.gender }}
         </li>
         <li>
           Height : {{ current.height }}
