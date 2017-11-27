@@ -6,7 +6,7 @@
     <link rel="stylesheet" type= "text/css" href="./assets/css/stylesheet.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Star Wars</title>
+    <title>Star Wars : The Force Awakens</title>
   </head>
   <body>
     <nav class="blue-grey darken-4">
@@ -19,67 +19,56 @@
      </ul>
    </div>
  </nav>
-  <div class="container">
+   <!-- <img src="/assets/images/swcharacters/luke2.jpg"> -->
+  <!-- <div class="container">
   <div id="appInfo">
-    <h1>{{ infos.name }}</h1>
+    <h1>{{ infos }}</h1>
       <ul>
         <li>
-          Birth Year : {{ infos.birth_year }}
+          randomChar : {{ randomChar }}
         </li>
         <li>
-          Gender : {{ infos.gender }}
+          characters : {{ characters }}
         </li>
         <li>
-          Mass : {{ infos.mass }}
-        </li>
-        <li>
-          Hair : {{ infos.hair_color }}
-        </li>
-        <li>
-          Eye : {{ infos.eye_color }}
-        </li>
-        <li>
-          Skin : {{ infos.skin_color }}
-        </li>
-        <li>
-          Home World : {{ infos.homeworld }}
-        </li>
-        <li>
-          Vehicles : {{ infos.vehicles }}
-        </li>
-        <li>
-          Films : {{ infos.films }}
-        </li>
-        <li>
-          StarShips : {{ infos.starships }}
-        </li>
-        <li>
-          Race : {{ infos.species }}
-        </li>
-        <li>
-          Race : {{ infos }}
+          StarShips : {{ infos }}
         </li>
       </ul>
-
-  </div>
-    <div id="app">
-      {{ message }}
+  </div> -->
+    <div id="current">
+      <h1>{{ current.name }}</h1>
+      <ul>
+        <li>
+          Gender : {{ current.gender}}
+        </li>
+        <li>
+          Height : {{ current.height }}
+        </li>
+        <li>
+          Mass : {{ current.mass }}
+        </li>
+        <li>
+          Eye Color : {{ current.eye_color}}
+        </li>
+        <li>
+          Hair Color : {{ current.hair_color}}
+        </li>
+        <li>
+          Skin Color : {{ current.skin_color}}
+        </li>
+        <li>
+          Home World : {{ current.homeworld}}
+        </li>
+      </ul>
     </div>
-    <div id="films">
-      {{ films }}
-    </div>
-
-
-
-
-
-
 
 
 
   </div>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="https://unpkg.com/vue"></script>
+  <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
   <script src="./assets/javascript/vue.js" charset="utf-8"></script>
   </body>
 </html>
