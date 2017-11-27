@@ -20,22 +20,58 @@
    </div>
  </nav>
   <div class="container">
-
-  <h1>Star Wars</h1>
   <div id="appInfo">
+    <h1>{{ infos.name }}</h1>
       <ul>
         <li>
-            {{ infos.name }}
+          Birth Year : {{ infos.birth_year }}
+        </li>
+        <li>
+          Gender : {{ infos.gender }}
+        </li>
+        <li>
+          Mass : {{ infos.mass }}
+        </li>
+        <li>
+          Hair : {{ infos.hair_color }}
+        </li>
+        <li>
+          Eye : {{ infos.eye_color }}
+        </li>
+        <li>
+          Skin : {{ infos.skin_color }}
+        </li>
+        <li>
+          Home World : {{ infos.homeworld }}
+        </li>
+        <li>
+          Vehicles : {{ infos.vehicles }}
+        </li>
+        <li>
+          Films : {{ infos.films }}
+        </li>
+        <li>
+          StarShips : {{ infos.starships }}
+        </li>
+        <li>
+          Race : {{ infos.species }}
+        </li>
+        <li>
+          Race : {{ infos }}
         </li>
       </ul>
+
   </div>
-  <div id="appSpecies">
-    <ul>
-      <li v-for="specie in species">
-        {{ specie.text }}
-      </li>
-    </ul>
-  </div>
+    <div id="app">
+      {{ message }}
+    </div>
+    <div id="films">
+      {{ films }}
+    </div>
+
+
+
+
 
 
 
