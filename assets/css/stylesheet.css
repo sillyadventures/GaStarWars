@@ -1,7 +1,37 @@
-h1 {
-  font-size: 60px;
+@media screen and (max-width: 600px){
+  nav {
+    padding-top: 40px;
+  }
+}
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+/*nav bar*/
+nav {
+  background-color: inherit;
+  height: 150px;
+  margin-bottom: 5%;
+  padding-top: 1%;
+  box-shadow: none;
+}
+nav img{
+  width: 100%;
 }
 
+/*character info*/
+.info {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  background-color: red;
+}
+h1 {
+  font-size: 70px;
+}
+/*character portrait*/
 img {
-  height: 200px;
+  max-height: 700px;
+  max-width: 100%;
 }

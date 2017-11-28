@@ -9,54 +9,63 @@
     <title>Star Wars : The Force Awakens</title>
   </head>
   <body>
-    <nav class="blue-grey darken-4">
+    <nav>
    <div class="nav-wrapper">
-     <a href="#" class="brand-logo center">Star Wars</a>
+     <a href="#" class="brand-logo center"> <img src='/assets/images/swicons/starwarsicon.png'/> </a>
      <ul id="nav-mobile" class="left hide-on-med-and-down">
-       <li><a href="sass.html">Char 1</a></li>
-       <li><a href="badges.html">Char 2</a></li>
-       <li><a href="collapsible.html">Char 3</a></li>
      </ul>
    </div>
  </nav>
 
   <div class="container">
-    <div id="current">
-      <h1>{{ current.name }}</h1>
-      <ul>
+    <div id="info">
 
-        <div v-for="todo in images">
-          <div v-if="random === todo.text">
-            <img v-bind:src='todo.image'/>
-          </div>
+      <div class="row">
+      <div v-for="todo in images">
+        <div class="col s12 m7" v-if="random === todo.text">
+          <img v-bind:src='todo.image'/>
         </div>
-        
+      </div>
+      <div class="col s12 m5 info">
+      <h1>{{ info.name }}</h1>
+      <ul>
         <li>
-          Gender : {{ current.gender }}
+          Gender : {{ info.gender }}
         </li>
         <li>
-          Height : {{ current.height }}
+          Height : {{ info.height }}
         </li>
         <li>
-          Mass : {{ current.mass }}
+          Mass : {{ info.mass }}
         </li>
         <li>
-          Eye Color : {{ current.eye_color}}
+          Eye Color : {{ info.eye_color}}
         </li>
         <li>
-          Hair Color : {{ current.hair_color}}
+          Hair Color : {{ info.hair_color}}
         </li>
         <li>
-          Skin Color : {{ current.skin_color}}
+          Skin Color : {{ info.skin_color}}
         </li>
         <li>
-          Home World : {{ current.homeworld}}
+          Species : {{ species.name }}
         </li>
+        <li>
+          Home World : {{ world.name }}
+        </li>
+        <li>
+          Vehicles : {{ vehiclesOne.name }}
+        </li>
+        <!-- <li>
+          StarShips : {{ info.starships }}
+        </li> -->
       </ul>
+    </div>
     </div>
 
 
 
+    </div>
   </div>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
