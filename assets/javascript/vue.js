@@ -21,6 +21,9 @@ var vue
 var planets = ""
 var species = ""
 var vehiclesOne = ""
+var vehiclesTwo = ""
+var starshipsOne = ""
+var starshipsTwo = ""
 
 // vue.js start
 // fetch movie from api
@@ -28,8 +31,9 @@ axios.get(`https://swapi.co/api/films/7/`)
   .then(response => {
     characters = response.data.characters
     // random character on refresh. using math random
-    // randomChar = characters[Math.floor(Math.random() * characters.length)]
-    randomChar = characters[0]
+    randomChar = characters[Math.floor(Math.random() * characters.length)]
+    //name for testing, below
+    // randomChar = characters[0]
   })
   .then(data => {
     axios.get(randomChar)
@@ -38,6 +42,9 @@ axios.get(`https://swapi.co/api/films/7/`)
       planets = info.homeworld
       species = info.species
       vehiclesOne = info.vehicles[0]
+      vehiclesTwo = info.vehicles[1]
+      starshipsOne = info.starships[0]
+      starshipsTwo = info.starships[1]
       vue = new Vue({
         el: '#info',
         data: {
@@ -46,6 +53,9 @@ axios.get(`https://swapi.co/api/films/7/`)
           world: '',
           species: '',
           vehiclesOne: '',
+          vehiclesTwo: '',
+          starshipsOne: '',
+          starshipsTwo: '',
           images: [
             { text: 'https://swapi.co/api/people/1/',
               image: '/assets/images/swcharacters/luke.jpg'
@@ -96,6 +106,18 @@ axios.get(`https://swapi.co/api/films/7/`)
       axios.get(vehiclesOne)
       .then(response => {
         vue.vehiclesOne = response.data
+      })
+      axios.get(vehiclesTwo)
+      .then(response => {
+        vue.vehiclesTwo = response.data
+      })
+      axios.get(starshipsOne)
+      .then(response => {
+        vue.starshipsOne = response.data
+      })
+      axios.get(starshipsTwo)
+      .then(response => {
+        vue.starshipsTwo = response.data
       })
     })
   })

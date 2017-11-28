@@ -7,7 +7,17 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: 'Playfair Display', serif;
   }
+/*footer*/
+.page-footer {
+  background-color: inherit;
+  background: hsla(160,5%,0%,0.4);
+  padding-bottom: 20px;
+}
+.page-footer a{
+  color: white;
+}
 /*nav bar*/
 nav {
   background-color: inherit;
@@ -25,7 +35,8 @@ nav img{
   color: white;
   font-size: 30px;
   text-align: center;
-  background-color: red;
+  background-color: inherit;
+  background: hsla(160,5%,0%,0.4);
 }
 h1 {
   font-size: 70px;
