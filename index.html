@@ -10,24 +10,31 @@
     <title>Star Wars : The Force Awakens</title>
   </head>
   <body>
-    <nav>
+  <div id="loading">
+    <div id="loading-gif">
+      <img id="loading-image" src="/assets/images/swicons/loadinggif.gif" alt="Loading..." />
+    </div>
+    <img id="loading-image" src="/assets/images/swicons/loading.jpg" alt="Loading..." />
+    <img id="loading-image" src="/assets/images/swicons/loading2.jpg" alt="Loading..." />
+    <img id="loading-image" src="/assets/images/swicons/loading3.jpg" alt="Loading..." />
+  </div>
+
+  <nav>
    <div class="nav-wrapper">
-     <a href="#" class="brand-logo center"> <img src='/assets/images/swicons/starwarsicon.png'/> </a>
-     <ul id="nav-mobile" class="left hide-on-med-and-down">
-     </ul>
-   </div>
- </nav>
+      <a href="#" class="brand-logo center"> <img src='/assets/images/swicons/starwarsicon.png'/> </a>
+    </div>
+  </nav>
 
   <div class="container">
     <div id="info">
       <div class="row">
-      <div v-for="todo in images">
-        <div class="col s12 m7" v-if="random === todo.text">
-          <img v-bind:src='todo.image'/>
+        <div v-for="todo in images">
+          <div class="col s12 m7" v-if="random === todo.text">
+            <img v-bind:src='todo.image'/>
+          </div>
         </div>
-      </div>
       <div class="col s12 m5 info">
-      <h1>{{ info.name }}</h1>
+        <h1>{{ info.name }}</h1>
       <ul>
         <li>
           Gender :  {{ info.gender }}
@@ -51,22 +58,22 @@
           Species :  {{ species.name }}
         </li>
         <li>
-        Weapon :
-        <div class="weap" v-for="eachW in images">
-          <div class="col s12 m7 weapon" v-if="random === eachW.text">
-            <img id="weapon" v-bind:src='eachW.weapon'/>
+          Weapon :
+          <div class="weap" v-for="eachW in images">
+            <div class="col s12 m7 weapon" v-if="random === eachW.text">
+              <img id="weapon" v-bind:src='eachW.weapon'/>
+            </div>
           </div>
-        </div>
         </li>
-        </ul>
+      </ul>
       </div>
       </div>
       <div v-for="eachP in images">
         <div class="row info" v-if="random === eachP.text">
           <h2> Home World : {{ world.name }} </h2>
-        <div class="col s12 m12">
-          <img v-bind:src='eachP.planet'/>
-        </div>
+            <div class="col s12 m12">
+              <img v-bind:src='eachP.planet'/>
+            </div>
         </div>
       </div>
       <div v-for="eachV in images">
@@ -74,25 +81,25 @@
           <h2> Vehicles : </h2>
           <div class="col s12 m6">
             <h3>{{ vehiclesOne.name }}</h3>
-          <img v-bind:src='eachV.vehicle'/>
-        </div>
+            <img v-bind:src='eachV.vehicle'/>
+          </div>
           <div class="col s12 m6">
-          <h3>{{ vehiclesTwo.name }}</h3>
-          <img v-bind:src='eachV.vehicleTwo'/>
-        </div>
+            <h3>{{ vehiclesTwo.name }}</h3>
+            <img v-bind:src='eachV.vehicleTwo'/>
+          </div>
         </div>
       </div>
       <div v-for="eachS in images">
         <div class="row info" v-if="random === eachS.text">
           <h2> Star Ships : </h2>
-          <div class="col s12 m6">
-          <h3>{{ starshipsOne.name }}</h3>
-          <img v-bind:src='eachS.starship'/>
-        </div>
-          <div class="col s12 m6">
-          <h3>{{ starshipsTwo.name }}</h3>
-          <img v-bind:src='eachS.starshipTwo'/>
-        </div>
+            <div class="col s12 m6">
+              <h3>{{ starshipsOne.name }}</h3>
+              <img v-bind:src='eachS.starship'/>
+            </div>
+            <div class="col s12 m6">
+              <h3>{{ starshipsTwo.name }}</h3>
+              <img v-bind:src='eachS.starshipTwo'/>
+            </div>
         </div>
       </div>
     </div>

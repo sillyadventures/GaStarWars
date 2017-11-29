@@ -16,6 +16,9 @@ var images = ['/assets/images/swbackgrounds/cliffs.jpg',
 $(document).ready(function () {
 $('body').css({'background-image': 'url(' + images[Math.floor(Math.random() *
    images.length)] + ')'});
+
+  setTimeout(function(){$('#loading').hide()}, 3000);
+
 });
 var vue
 var planets = ""
@@ -31,9 +34,9 @@ axios.get(`https://swapi.co/api/films/7/`)
   .then(response => {
     characters = response.data.characters
     // random character on refresh. using math random
-    randomChar = characters[Math.floor(Math.random() * characters.length)]
+    // randomChar = characters[Math.floor(Math.random() * characters.length)]
     //name for testing, below
-    // randomChar = characters[0]
+    randomChar = characters[1]
   })
   .then(data => {
     axios.get(randomChar)
@@ -69,7 +72,8 @@ axios.get(`https://swapi.co/api/films/7/`)
             { text: 'https://swapi.co/api/people/3/',
               image: '/assets/images/swcharacters/c3po.jpg',
               planet: '/assets/images/swplanets/naboo.jpg',
-              weapon: '/assets/images/swweapons/drone.png'
+              weapon: '/assets/images/swweapons/drone.png',
+              friend: '& C-3P)'
             },
             { text: 'https://swapi.co/api/people/5/',
               image: '/assets/images/swcharacters/leia.jpg',

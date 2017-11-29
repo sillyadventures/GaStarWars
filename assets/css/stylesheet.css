@@ -61,3 +61,24 @@ img {
   max-height: 700px;
   max-width: 100%;
 }
+#loading-gif{
+  position: absolute;
+  left: -80px;
+  bottom: 4%;
+  z-index: 1;
+}
+#loading {
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   position: fixed;
+   display: block;
+   background-color: #fff;
+   text-align: center;
+}
+#loading-image {
+  background-size: contain;
+  height: 100%;
+  position: relative;
+}
