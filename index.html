@@ -51,23 +51,49 @@
           Species :  {{ species.name }}
         </li>
         <li>
-          Home World : {{ world.name }}
+        Weapon :
+        <div class="weap" v-for="eachW in images">
+          <div class="col s12 m7 weapon" v-if="random === eachW.text">
+            <img id="weapon" v-bind:src='eachW.weapon'/>
+          </div>
+        </div>
         </li>
-        <li>
-          Vehicles :
-          <br/>
-          {{ vehiclesOne.name }}
-          <br/>
-          {{ vehiclesTwo.name }}
-        <li>
-          Star Ships :
-          <br/>
-          {{ starshipsOne.name }}
-          <br/>
-          {{ starshipsTwo.name }}
-        </li>
-      </ul>
+        </ul>
       </div>
+      </div>
+      <div v-for="eachP in images">
+        <div class="row info" v-if="random === eachP.text">
+          <h2> Home World : {{ world.name }} </h2>
+        <div class="col s12 m12">
+          <img v-bind:src='eachP.planet'/>
+        </div>
+        </div>
+      </div>
+      <div v-for="eachV in images">
+        <div class="row info" v-if="random === eachV.text">
+          <h2> Vehicles : </h2>
+          <div class="col s12 m6">
+            <h3>{{ vehiclesOne.name }}</h3>
+          <img v-bind:src='eachV.vehicle'/>
+        </div>
+          <div class="col s12 m6">
+          <h3>{{ vehiclesTwo.name }}</h3>
+          <img v-bind:src='eachV.vehicleTwo'/>
+        </div>
+        </div>
+      </div>
+      <div v-for="eachS in images">
+        <div class="row info" v-if="random === eachS.text">
+          <h2> Star Ships : </h2>
+          <div class="col s12 m6">
+          <h3>{{ starshipsOne.name }}</h3>
+          <img v-bind:src='eachS.starship'/>
+        </div>
+          <div class="col s12 m6">
+          <h3>{{ starshipsTwo.name }}</h3>
+          <img v-bind:src='eachS.starshipTwo'/>
+        </div>
+        </div>
       </div>
     </div>
   </div>
@@ -75,11 +101,14 @@
   <footer class="page-footer">
     <div class="container">
       <div class="row">
-        <div class="col s12 m8">
+        <div class="col l9 s12">
           <h5 class="white-text">Star Wars : The Force Awakens</h5>
             <p class="grey-text text-lighten-4">Art Work illsutrations by :
             <a href="https://posterspy.com/profile/liambrazier/"> liambrazier</a></p>
             <h6 class="white-text">© 2017, Fan-site by : Shui</h6>
+        </div>
+        <div class="col l2 s12">
+        <img src='/assets/images/swicons/bb8.png'/>
         </div>
         </div>
       </div>

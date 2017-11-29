@@ -37,6 +37,21 @@ nav img{
   text-align: center;
   background-color: inherit;
   background: hsla(160,5%,0%,0.4);
+  margin-bottom: 10%;
+}
+.weap{
+  padding-left: 30%;
+  margin-bottom: 5%;
+}
+.weapon {
+  background: hsla(360,100%,100%,0.5);
+  border-radius: 50%;
+  max-width: 150px;
+  margin-bottom: 15%;
+}
+#weapon{
+  max-height: 150px;
+  width: 150px;
 }
 h1 {
   font-size: 70px;

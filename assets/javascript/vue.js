@@ -58,37 +58,64 @@ axios.get(`https://swapi.co/api/films/7/`)
           starshipsTwo: '',
           images: [
             { text: 'https://swapi.co/api/people/1/',
-              image: '/assets/images/swcharacters/luke.jpg'
+              image: '/assets/images/swcharacters/luke.jpg',
+              vehicle: '/assets/images/swvehicles/snowspeeder.jpg',
+              vehicleTwo: '/assets/images/swvehicles/speeder.jpg',
+              starship: '/assets/images/swvehicles/xwing.jpg',
+              starshipTwo: '/assets/images/swvehicles/shuttle.jpg',
+              planet: '/assets/images/swplanets/tattoine.jpg',
+              weapon: '/assets/images/swweapons/lighticon.png'
             },
             { text: 'https://swapi.co/api/people/3/',
-              image: '/assets/images/swcharacters/c3po.jpg'
+              image: '/assets/images/swcharacters/c3po.jpg',
+              planet: '/assets/images/swplanets/naboo.jpg',
+              weapon: '/assets/images/swweapons/drone.png'
             },
             { text: 'https://swapi.co/api/people/5/',
-              image: '/assets/images/swcharacters/leia.jpg'
+              image: '/assets/images/swcharacters/leia.jpg',
+              vehicle: '/assets/images/swvehicles/speeder.jpg',
+              planet: '/assets/images/swplanets/alderaan.jpg',
+              weapon: '/assets/images/swweapons/gunTwo.png'
             },
             { text: 'https://swapi.co/api/people/13/',
-              image: '/assets/images/swcharacters/chew.jpg'
+              image: '/assets/images/swcharacters/chew.jpg',
+              vehicle: '/assets/images/swvehicles/atst.jpg',
+              starship: '/assets/images/swvehicles/falcon.jpg',
+              starshipTwo: '/assets/images/swvehicles/shuttle.jpg',
+              planet: '/assets/images/swplanets/corellia.jpg',
+              weapon: '/assets/images/swweapons/blaster.png'
             },
             { text: 'https://swapi.co/api/people/14/',
-              image: '/assets/images/swcharacters/han.jpg'
+              image: '/assets/images/swcharacters/han.jpg',
+              starship: '/assets/images/swvehicles/falcon.jpg',
+              starshipTwo: '/assets/images/swvehicles/shuttle.jpg',
+              planet: '/assets/images/swplanets/moncala.jpg',
+              weapon: '/assets/images/swweapons/gunOne.png'
             },
             { text: 'https://swapi.co/api/people/27/',
-              image: '/assets/images/swcharacters/ackbar.jpg'
+              image: '/assets/images/swcharacters/ackbar.jpg',
+              weapon: '/assets/images/swweapons/blaster.png'
             },
             { text: 'https://swapi.co/api/people/84/',
-              image: '/assets/images/swcharacters/finn.jpg'
+              image: '/assets/images/swcharacters/finn.jpg',
+              weapon: '/assets/images/swweapons/blaster.png'
             },
             { text: 'https://swapi.co/api/people/85/',
-              image: '/assets/images/swcharacters/rey.jpeg'
+              image: '/assets/images/swcharacters/rey.jpeg',
+              weapon: '/assets/images/swweapons/lighticon.png'
             },
             { text: 'https://swapi.co/api/people/86/',
-              image: '/assets/images/swcharacters/poe.jpg'
+              image: '/assets/images/swcharacters/poe.jpg',
+              starship: '/assets/images/swvehicles/xwing.jpg',
+              weapon: '/assets/images/swweapons/starship.png'
             },
             { text: 'https://swapi.co/api/people/87/',
-              image: '/assets/images/swcharacters/bb8.jpg'
+              image: '/assets/images/swcharacters/bb8.jpg',
+              weapon: '/assets/images/swweapons/drone.png'
             },
             { text: 'https://swapi.co/api/people/88/',
-              image: '/assets/images/swcharacters/phasma.jpg'
+              image: '/assets/images/swcharacters/phasma.jpg',
+              weapon: '/assets/images/swweapons/blaster.png'
             }
           ]
         }
